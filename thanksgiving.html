@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<style type="text/css">
+		p{
+font-family: courier;
+font-size: 50px
+		}
+		#blank{
+			font-family: courier;
+			font-size: 50px;
+			border:1px dotted black;
+			width: 600px;
+			height: 200px;
+			color:orange;
+		}
+
+	</style>
+</head>
+<body>
+	
+<p>
+	Roses are red,<br>
+	violets are blue,
+	<br>
+	Happy Thanksgiving and <br>
+I wish I could... </p>
+
+<div id="blank"></div> 
+<p> with you
+</p>
+<script type="text/javascript">
+	var array = [
+"make jokes",
+"eat pie",
+"watch movies"
+
+	];
+
+
+
+
+var box= document.getElementById("blank");
+box.addEventListener("click",
+	function(){
+var x = Math.round(Math.random()*2)
+box.innerText=array[x];
+}
+);
+
+function add (x,y){
+console.log (x+y)
+
+
+}
+
+
+
+
+</script>
+
+
+
+</body>
+</html>
